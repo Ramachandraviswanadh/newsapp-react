@@ -1,10 +1,27 @@
-import './App.css';
+import "bootstrap/dist/css/bootstrap.min.css"
+import { BrowserRouter, Switch, Route } from 'react-router-dom'
+import "./App.css"
+import NavbarComponent from "./components/NavbarComponent"
+import News from "./components/News"
+import About from './components/About'
+import Contact from './components/Contact'
 
 function App() {
   return (
-    <div className="App">
-      
-    </div>
+    <BrowserRouter>
+		  <NavbarComponent />
+			<Switch>
+				<Route exact path="/">
+					<News />
+				</Route>
+				<Route path="/about">
+					<About />
+				</Route>
+				<Route path="/contact">
+					<Contact />
+				</Route>
+			</Switch>
+    </BrowserRouter>
   );
 }
 
