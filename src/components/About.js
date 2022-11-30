@@ -5,6 +5,8 @@ const About = () => {
   return (
     <Container style={{ textAlign: "center" }}>
       <h1 className="display-4 mt-2 mb-4">About Us</h1>
+      <p className="display-6 ">The news app display the latest new based on which country it is selected.To know more about the news click on the 'Read more'.</p>
+      <hr/>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa optio
         magnam pariatur ducimus, reiciendis id, unde repellendus ea debitis,
@@ -49,7 +51,7 @@ const About = () => {
           quidem.
         </Col>
         <Col md={2}>
-          <img src={brandLogo} alt="brand" style={{ height: "200px" }} />
+          <img src={brandLogo} alt="brand" style={{ height: "200px" ,width: "200px"}} />
         </Col>
 				<Col md={5}>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
