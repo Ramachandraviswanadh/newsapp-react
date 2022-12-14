@@ -33,7 +33,7 @@ const News = () => {
         <option value="gr">Greece</option>
       </Form.Select>
       <Row>
-        { (
+        {news.length ? (
           news.map((singleNews, index) => (
             <Col md={4} className="mt-2 mb-2" key={index}>
               <Card className="news-card">
@@ -75,8 +75,7 @@ const News = () => {
               </Card>
             </Col>
           ))
-        ) 
-        /* (
+        ) : (
           <Spinner
             animation="border"
             role="status"
@@ -84,8 +83,7 @@ const News = () => {
           >
             <span className="visually-hidden">Loading...</span>
           </Spinner>
-        )*/
-        }
+        )}
       </Row>
     </Container>
   );
